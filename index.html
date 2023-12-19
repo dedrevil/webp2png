@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulk WebP to PNG Converter</title>
+  <meta name="description" content="Convert WebP to PNG in bulk with stunning animations.">
+  <meta name="keywords" content="webp to png convert,webp to png converter,webp to png converter extension,webp to png converter software,webp to png converter free,webp to png converter chrome extension,webp to png converter bulk,webp to png converter reddit,webp to png converter - freeconvert.com,webp to png converter software free,webp to png converter transparent,webp to png convert online,convert webp to png online free,convert webp file to png,convert png to webp free,convert image webp to png,linux convert webp to png,convert png to webp photoshop,convert png to webp without losing quality,batch convert webp to png,convert png to webp android studio,convert webp to png adobe,convert webp to png app,convert a webp to png,auto convert webp to png,convert animated webp to png,convert png to webp or avif,convert a webp image to png,convert png and jpg to webp,how to convert webp to png online,convert jpg and png to webp,automatically convert webp to png,android convert png to webp,how to convert a webp to png,how to convert a webp image to png,webp to png batch convert,convert webp to png bash,batch convert webp to png linux,gimp batch convert webp to png,convert png to webp,convert webp to png free,best way to convert png to webp,bash convert webp to png,how to convert from webp to png,convert webp to png in bulk,cloudconvert webp to png,convert webp to png c#,convert webp to png command line,convert webp to png command line windows,convert webp to png chrome,convert webp to png command,convert webp to png linux command line,convert webp to png mac command line,convert png to webp command line,c# convert webp to png,can you convert webp to png,cwebp convert png to webp,webp to png converter download,webp to png converter free download,webp to png converter software free download,how do i convert webp to png,convert webp to png download,convert webp to png ezgif,convert webp to png extension,webp to png converter free online,webp to png file converter,webp to png bulk converter free,convert webp to png firefox,convert webp to png ffmpeg,convert image from webp to png,convert from webp to png,ffmpeg convert webp to png,convert png to webp format,batch convert from webp to png,webp to png converter github,convert webp to png gimp,convert google webp to png,golang convert webp to png,convert webp to png github,golang convert png to webp,convert webp to png high quality,convert webp to png hd,how to convert webp to png without losing transparency,how to convert webp to png in photoshop,how to convert webp to png reddit,how to convert webp to png on mac,how to convert png to webp in android studio,how to convert png into webp,how to convert png to webp in php,how to convert png to webp format,how to convert webp to png,how to convert a webp file to png,how to convert png to webp in photoshop,how to convert webp image to png,how to convert your image to png or webp,webp to png converter i love,webp to png image converter,webp to png online image converter,convert webp to png imagemagick,imagemagick convert webp to png,can i convert webp to png,how to convert webp into png,convert webp to png iloveimg,convert image webp to png online,linux convert .webp image to png,convert your image to png or webp,convert webp to png javascript,convert webp to png java,convert webp to png or jpg,java convert png to webp,convert png to webp javascript,convert png jpg to webp,node js convert png to webp,js convert png to webp,how do i convert webp to gif,convert webp to png bulk,convert webp to png without losing transparency,convert webp to png windows,convert webp to png with transparency,webp to png converter linux,convert webp to png without losing quality,convert webp image to png linux,convert webp to png i love pdf,convert png to lossless webp,webp to png converter multiple,convert webp to png mac,macos convert webp to png,mass convert webp to png,convert png to webp mac,macos convert png to webp,magick convert png to webp,nodejs convert webp to png,convert png to webp nodejs,nginx convert png to webp,webp to png converter online free,convert webp to png on mac,convert webp to png on windows,convert webp to png online,convert webp file to png online,convert webp to jpg or png,webp to png converter portable,convert webp to png python,convert webp to png photoshop,convert webp to png php,powershell convert webp to png,python convert webp to png,php convert png to webp,convert webp to png reddit,convert png to webp react,sharp convert webp to png,convert webp to png software,sharp convert png to webp,webp to png transparent converter,convert webp to png terminal,convert to webp to png,convert webp to png transparent,convert webp to png ubuntu,ubuntu convert webp to png,vwebp,convert png to webp wordpress,convert png to webp with imagemagick,webpack convert png to webp,convert webp to png linux,webp to png command line,bulk webp to png converter,webp 2 png,6.png,webp to png photoshop,8 bit png converter">
+  <meta name="author" content="Poopcode">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+  <style>
+        body {
+	font-family: 'Ubuntu', sans-serif;
+      background-color: #232b2b;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70vh;
+    }
+
+    #converter {
+      text-align: center;
+      padding: 35px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 30px;
+      color: #333;
+    }
+
+    input {
+    font-family: 'Ubuntu', sans-serif;
+      padding: 15px;
+      margin: 15px 0;
+      font-size: 20px;
+    }
+
+    button {
+    font-family: 'Ubuntu', sans-serif;
+      padding: 15px 30px;
+      font-size: 15px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #outputImages {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .image-container {
+      margin: 15px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .image-container img {
+      max-width: 80%;
+      height: 50%;
+      display: block;
+    }
+    
+
+.footer {
+   position: fixed;
+   font-size: 15px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   color: #f0f0f0;
+}
+
+a:link {
+  color: hotpink;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+  </style>
+</head>
+<body>
+  <div id="converter">
+    <h1>Bulk WebP to PNG Converter</h1>
+    <input type="file" accept=".webp" id="fileInput" multiple > 
+    <br>
+    <button id="convertButton">Convert to PNG</button>
+     <div id="output"></div>
+      <button id="cleanupButton" hidden>Cleanup</button>
+    </div>
+  </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const fileInput = document.getElementById('fileInput');
+        const convertButton = document.getElementById('convertButton');
+        const cleanupButton = document.getElementById('cleanupButton');
+        const outputDiv = document.getElementById('output');
+        cleanupButton.addEventListener('click', function () {
+          outputDiv.innerHTML = ''; // Clear previous output
+          cleanupButton.style.display = 'none';
+        });
+
+        convertButton.addEventListener('click', function () {
+        
+          const files = fileInput.files;
+          outputDiv.innerHTML = ''; // Clear previous output
+          if (files.length > 0) {
+          	cleanupButton.style.display = 'unset';
+          	 outputDiv.appendChild(document.createElement('br'));
+          	 outputDiv.appendChild(document.createElement('br'));
+          	 outputDiv.appendChild(document.createElement('br'));
+          	 
+          	 outputDiv.appendChild(document.createElement('br'));
+          	  const downloadDiv = document.createElement('div');
+                downloadDiv.innerHTML = "Converted! Click below link(s) to download."
+                outputDiv.appendChild(downloadDiv);
+                outputDiv.appendChild(document.createElement('br'));
+          	}
+          for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+            const reader = new FileReader();
+
+            reader.onload = function (event) {
+              const img = new Image();
+              img.src = event.target.result;
+
+              img.onload = function () {
+                const canvas = document.createElement('canvas');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+                const outputImg = new Image();
+                outputImg.src = canvas.toDataURL('image/png');
+
+                // Create a download link for the converted PNG
+                outputDiv.appendChild(document.createElement('br'));
+               
+                const link = document.createElement('a');
+                link.href = outputImg.src;
+                link.download = file.name.replace('.webp', '.png'); // Use the same name, replace extension
+                link.textContent = link.download;
+                outputDiv.appendChild(link);
+                outputDiv.appendChild(document.createElement('br'));
+                outputDiv.appendChild(document.createElement('br'));
+              };
+            };
+            reader.readAsDataURL(file);
+          }
+          cleanupButton.style.display = 'block';
+        });
+      });
+  </script>
+  <div class="footer">
+   <p>Built with  <a href="https://poopcode.com" > Poopcode 💩 </a>
+</p>
+</div>
+</body>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3194348739260514"
+                data-ad-slot="2142264606" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+</html>
+	
